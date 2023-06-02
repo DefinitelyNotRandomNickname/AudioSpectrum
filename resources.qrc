@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/arrow_down.png</file>
+        <file>images/arrow_up.png</file>
+        <file>images/button.png</file>
+        <file>images/button_hover.png</file>
+        <file>images/pl_flag.png</file>
+        <file>pro/style.qss</file>
+        <file>images/us_flag.png</file>
+        <file>pro/AudioSpectrum_pl_PL.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,33 @@
+QPushButton{
+    border-image: url(:/images/button.png);
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    border-image: url(:/images/button_hover.png);
+}
+
+QSpinBox, QComboBox {
+    border-image: url(:/images/button.png);
+    border-radius: 10px;
+}
+
+QSpinBox:hover, QComboBox:hover {
+    border-image: url(:/images/button_hover.png);
+}
+
+QSpinBox:down-button {
+    border-image: url(:/images/arrow_down.png);
+    border-bottom-right-radius: 10px;
+}
+
+QSpinBox:up-button {
+    border-image: url(:/images/arrow_up.png);
+    border-top-right-radius: 10px;
+}
+
+QComboBox:drop-down {
+    border-image: url(:/images/arrow_down.png);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
