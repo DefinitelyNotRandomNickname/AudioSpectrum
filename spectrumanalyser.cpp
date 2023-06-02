@@ -1,6 +1,6 @@
 #include "spectrumanalyser.h"
 #include "utils.h"
-#include "3rdparty\fftreal\fftreal_wrapper.h"
+#include "3rdparty/fftreal/fftreal_wrapper.h"
 
 #include <qmath.h>
 #include <qmetatype.h>

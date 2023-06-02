@@ -3,7 +3,7 @@
 
 #include <QPainter>
 
-#include <QtCore\qmath.h>
+#include <QtCore/qmath.h>
 #include <cmath>
 
 using namespace std;

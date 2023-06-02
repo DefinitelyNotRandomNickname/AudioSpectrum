@@ -22,7 +22,7 @@ const qreal  SpectrumLowFreq        = 20.0; // Hz
 // Upper band of last band in the spectrum
 const qreal  SpectrumHighFreq       = 20000.0; // Hz
 
-extern int klatki;
+extern int frames;
 int SpectrumNumBands = 128;
 
 bool _2D = true;
@@ -173,7 +173,7 @@ void MainWidget::createUi2D()
     m_FPScount->setMinimumSize(SmallerButtonSize);
     m_FPScount->setRange(1, 120);
     m_FPScount->setSuffix(tr(" fps"));
-    m_FPScount->setValue(klatki);
+    m_FPScount->setValue(frames);
 
     m_InputDevices->setEnabled(true);
     m_InputDevices->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
@@ -321,7 +321,7 @@ void MainWidget::createUi3D()
     m_FPScount->setMinimumSize(SmallerButtonSize);
     m_FPScount->setRange(1, 120);
     m_FPScount->setSuffix(tr(" fps"));
-    m_FPScount->setValue(klatki);
+    m_FPScount->setValue(frames);
 
     m_InputDevices->setEnabled(true);
     m_InputDevices->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
@@ -507,14 +507,14 @@ void MainWidget::switch3D()
     m_engine->suspend();
     m_engine->stopRecording();
 
-    clearLayout(layout());
-
     disconnect(m_plButton, nullptr, nullptr, nullptr);
     disconnect(m_usButton, nullptr, nullptr, nullptr);
     disconnect(m_3DswitchButton, nullptr, nullptr, nullptr);
     disconnect(m_FPScount, nullptr, nullptr, nullptr);
     disconnect(m_Bars, nullptr, nullptr, nullptr);
     disconnect(m_Gradient, nullptr, nullptr, nullptr);
+
+    clearLayout(layout());
 
     _2D = !_2D;
 
@@ -532,13 +532,13 @@ void MainWidget::switch2D()
     m_engine->suspend();
     m_engine->stopRecording();
 
-    clearLayout(layout());
-
     disconnect(m_plButton, nullptr, nullptr, nullptr);
     disconnect(m_usButton, nullptr, nullptr, nullptr);
     disconnect(m_2DswitchButton, nullptr, nullptr, nullptr);
     disconnect(m_FPScount, nullptr, nullptr, nullptr);
     disconnect(m_Color, nullptr, nullptr, nullptr);
+
+    clearLayout(layout());
 
     _2D = !_2D;
 

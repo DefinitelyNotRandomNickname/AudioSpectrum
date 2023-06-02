@@ -6,7 +6,7 @@
 #include <QList>
 
 #include "frequencyspectrum.h"
-#include "3rdparty\fftreal\FFTRealFixLenParam.h"
+#include "3rdparty/fftreal/FFTRealFixLenParam.h"
 
 QT_FORWARD_DECLARE_CLASS(QAudioFormat)
 QT_FORWARD_DECLARE_CLASS(QThread)

@@ -1,6 +1,6 @@
 #include "engine.h"
 #include "utils.h"
-#include "3rdparty\fftreal\fftreal_wrapper.h" // For FFTLengthPowerOfTwo
+#include "3rdparty/fftreal/fftreal_wrapper.h" // For FFTLengthPowerOfTwo
 
 #include <math.h>
 
@@ -18,8 +18,8 @@
 
 const qint64 BufferDurationUs = 10 * 100000000;
 
-int klatki = 120;
-int fps = 1000 / klatki;
+int frames = 120;
+int fps = 1000 / frames;
 
 //-----------------------------------------------------------------------------
 // Constructor and destructor
@@ -126,8 +126,8 @@ void Engine::setAudioInputDevice(const QAudioDevice &device)
 
 void Engine::FPSchanged(const int i)
 {
-    klatki = i;
-    fps = 1000 / klatki;
+    frames = i;
+    fps = 1000 / frames;
     m_notifyTimer->setInterval(fps);
 }
 
