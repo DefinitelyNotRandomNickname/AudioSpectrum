@@ -85,3 +85,6 @@ Similar to the spectograph, the 3D scene provides functionalities such as adjust
 However, it does not include the missing bar filling or the glow effects.
 
 ![](https://github.com/DefinitelyNotRandomNickname/AudioSpectrum/blob/main/images/3D_scene.gif)
+
+### Note
+To run this program on windows you need QtCreator. If you are on Linux there is already built version in https://github.com/DefinitelyNotRandomNickname/AudioSpectrum-Built.
